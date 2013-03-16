@@ -1,0 +1,321 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		849D829316F472E700B2AA3C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849D829216F472E700B2AA3C /* UIKit.framework */; };
+		849D829516F472E700B2AA3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849D829416F472E700B2AA3C /* Foundation.framework */; };
+		849D829716F472E700B2AA3C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849D829616F472E700B2AA3C /* CoreGraphics.framework */; };
+		849D829D16F472E700B2AA3C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 849D829B16F472E700B2AA3C /* InfoPlist.strings */; };
+		849D829F16F472E700B2AA3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 849D829E16F472E700B2AA3C /* main.m */; };
+		849D82A316F472E700B2AA3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 849D82A216F472E700B2AA3C /* AppDelegate.m */; };
+		849D82A516F472E700B2AA3C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 849D82A416F472E700B2AA3C /* Default.png */; };
+		849D82A716F472E700B2AA3C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 849D82A616F472E700B2AA3C /* Default@2x.png */; };
+		849D82A916F472E700B2AA3C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 849D82A816F472E700B2AA3C /* Default-568h@2x.png */; };
+		849D82AC16F472E700B2AA3C /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849D82AB16F472E700B2AA3C /* MasterViewController.m */; };
+		849D82AF16F472E700B2AA3C /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849D82AE16F472E700B2AA3C /* DetailViewController.m */; };
+		849D82B216F472E700B2AA3C /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849D82B016F472E700B2AA3C /* MasterViewController.xib */; };
+		849D82B516F472E700B2AA3C /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849D82B316F472E700B2AA3C /* DetailViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		849D828F16F472E700B2AA3C /* FlickrPhotoBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickrPhotoBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		849D829216F472E700B2AA3C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		849D829416F472E700B2AA3C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		849D829616F472E700B2AA3C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		849D829A16F472E700B2AA3C /* FlickrPhotoBrowser-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlickrPhotoBrowser-Info.plist"; sourceTree = "<group>"; };
+		849D829C16F472E700B2AA3C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		849D829E16F472E700B2AA3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		849D82A016F472E700B2AA3C /* FlickrPhotoBrowser-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlickrPhotoBrowser-Prefix.pch"; sourceTree = "<group>"; };
+		849D82A116F472E700B2AA3C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		849D82A216F472E700B2AA3C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		849D82A416F472E700B2AA3C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		849D82A616F472E700B2AA3C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		849D82A816F472E700B2AA3C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		849D82AA16F472E700B2AA3C /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		849D82AB16F472E700B2AA3C /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		849D82AD16F472E700B2AA3C /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		849D82AE16F472E700B2AA3C /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		849D82B116F472E700B2AA3C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController.xib; sourceTree = "<group>"; };
+		849D82B416F472E700B2AA3C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		849D828C16F472E700B2AA3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849D829316F472E700B2AA3C /* UIKit.framework in Frameworks */,
+				849D829516F472E700B2AA3C /* Foundation.framework in Frameworks */,
+				849D829716F472E700B2AA3C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		849D828616F472E700B2AA3C = {
+			isa = PBXGroup;
+			children = (
+				849D829816F472E700B2AA3C /* FlickrPhotoBrowser */,
+				849D829116F472E700B2AA3C /* Frameworks */,
+				849D829016F472E700B2AA3C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		849D829016F472E700B2AA3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				849D828F16F472E700B2AA3C /* FlickrPhotoBrowser.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		849D829116F472E700B2AA3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				849D829216F472E700B2AA3C /* UIKit.framework */,
+				849D829416F472E700B2AA3C /* Foundation.framework */,
+				849D829616F472E700B2AA3C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		849D829816F472E700B2AA3C /* FlickrPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				849D82A116F472E700B2AA3C /* AppDelegate.h */,
+				849D82A216F472E700B2AA3C /* AppDelegate.m */,
+				849D82AA16F472E700B2AA3C /* MasterViewController.h */,
+				849D82AB16F472E700B2AA3C /* MasterViewController.m */,
+				849D82AD16F472E700B2AA3C /* DetailViewController.h */,
+				849D82AE16F472E700B2AA3C /* DetailViewController.m */,
+				849D82B016F472E700B2AA3C /* MasterViewController.xib */,
+				849D82B316F472E700B2AA3C /* DetailViewController.xib */,
+				849D829916F472E700B2AA3C /* Supporting Files */,
+			);
+			path = FlickrPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		849D829916F472E700B2AA3C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				849D829A16F472E700B2AA3C /* FlickrPhotoBrowser-Info.plist */,
+				849D829B16F472E700B2AA3C /* InfoPlist.strings */,
+				849D829E16F472E700B2AA3C /* main.m */,
+				849D82A016F472E700B2AA3C /* FlickrPhotoBrowser-Prefix.pch */,
+				849D82A416F472E700B2AA3C /* Default.png */,
+				849D82A616F472E700B2AA3C /* Default@2x.png */,
+				849D82A816F472E700B2AA3C /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		849D828E16F472E700B2AA3C /* FlickrPhotoBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 849D82B816F472E700B2AA3C /* Build configuration list for PBXNativeTarget "FlickrPhotoBrowser" */;
+			buildPhases = (
+				849D828B16F472E700B2AA3C /* Sources */,
+				849D828C16F472E700B2AA3C /* Frameworks */,
+				849D828D16F472E700B2AA3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlickrPhotoBrowser;
+			productName = FlickrPhotoBrowser;
+			productReference = 849D828F16F472E700B2AA3C /* FlickrPhotoBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		849D828716F472E700B2AA3C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Tornado;
+			};
+			buildConfigurationList = 849D828A16F472E700B2AA3C /* Build configuration list for PBXProject "FlickrPhotoBrowser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 849D828616F472E700B2AA3C;
+			productRefGroup = 849D829016F472E700B2AA3C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				849D828E16F472E700B2AA3C /* FlickrPhotoBrowser */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		849D828D16F472E700B2AA3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849D829D16F472E700B2AA3C /* InfoPlist.strings in Resources */,
+				849D82A516F472E700B2AA3C /* Default.png in Resources */,
+				849D82A716F472E700B2AA3C /* Default@2x.png in Resources */,
+				849D82A916F472E700B2AA3C /* Default-568h@2x.png in Resources */,
+				849D82B216F472E700B2AA3C /* MasterViewController.xib in Resources */,
+				849D82B516F472E700B2AA3C /* DetailViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		849D828B16F472E700B2AA3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849D829F16F472E700B2AA3C /* main.m in Sources */,
+				849D82A316F472E700B2AA3C /* AppDelegate.m in Sources */,
+				849D82AC16F472E700B2AA3C /* MasterViewController.m in Sources */,
+				849D82AF16F472E700B2AA3C /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		849D829B16F472E700B2AA3C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				849D829C16F472E700B2AA3C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		849D82B016F472E700B2AA3C /* MasterViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				849D82B116F472E700B2AA3C /* en */,
+			);
+			name = MasterViewController.xib;
+			sourceTree = "<group>";
+		};
+		849D82B316F472E700B2AA3C /* DetailViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				849D82B416F472E700B2AA3C /* en */,
+			);
+			name = DetailViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		849D82B616F472E700B2AA3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		849D82B716F472E700B2AA3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		849D82B916F472E700B2AA3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlickrPhotoBrowser/FlickrPhotoBrowser-Prefix.pch";
+				INFOPLIST_FILE = "FlickrPhotoBrowser/FlickrPhotoBrowser-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		849D82BA16F472E700B2AA3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlickrPhotoBrowser/FlickrPhotoBrowser-Prefix.pch";
+				INFOPLIST_FILE = "FlickrPhotoBrowser/FlickrPhotoBrowser-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		849D828A16F472E700B2AA3C /* Build configuration list for PBXProject "FlickrPhotoBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				849D82B616F472E700B2AA3C /* Debug */,
+				849D82B716F472E700B2AA3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		849D82B816F472E700B2AA3C /* Build configuration list for PBXNativeTarget "FlickrPhotoBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				849D82B916F472E700B2AA3C /* Debug */,
+				849D82BA16F472E700B2AA3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 849D828716F472E700B2AA3C /* Project object */;
+}
