@@ -8,10 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@class Photo, MasterViewController;
 @interface DetailViewController : UIViewController
 
-@property (strong, nonatomic) id detailItem;
+@property (strong, nonatomic) Photo *photo;
+@property (strong, nonatomic) MasterViewController *master;
 
-@property (strong, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (retain, nonatomic) IBOutlet UIImageView *photoImage;
+@property (retain, nonatomic) IBOutlet UILabel *photoTitle;
+
+- (IBAction)deletePhoto:(id)sender;
+- (IBAction)done:(id)sender;
 
 @end

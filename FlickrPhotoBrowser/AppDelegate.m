@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 
 #import "MasterViewController.h"
+#import "PhotoParser.h"
 
 @implementation AppDelegate
 
@@ -23,12 +24,37 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
+    
+    NSMutableArray *photos = [self parsePhotos];
 
     MasterViewController *masterViewController = [[[MasterViewController alloc] initWithNibName:@"MasterViewController" bundle:nil] autorelease];
+    masterViewController.photos = photos;
+    
     self.navigationController = [[[UINavigationController alloc] initWithRootViewController:masterViewController] autorelease];
+
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (NSMutableArray *)parsePhotos {
+    NSString *pathToPhotos = [[NSBundle mainBundle] pathForResource:@"photos" ofType:@"xml"];
+    NSData *photosData = [[[NSData alloc] initWithContentsOfFile:pathToPhotos] autorelease];
+    
+    NSXMLParser *XMLParser = [[[NSXMLParser alloc] initWithData:photosData] autorelease];
+    PhotoParser *photoParser = [[[PhotoParser alloc] init] autorelease];
+    XMLParser.delegate = photoParser;
+    
+    BOOL succesParse = [XMLParser parse];
+    
+    if (succesParse) {
+        return photoParser.parsedPhotos;
+        NSLog(@"Photos %@", photoParser.parsedPhotos);
+    }
+    
+    NSLog(@"Parse fail");
+    
+    return nil;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
