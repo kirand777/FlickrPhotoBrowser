@@ -8,6 +8,8 @@
 
 #import "ImageDownloader.h"
 
+NSString *const ImageDownloaderDidFinishedLoadingNotification = @"ImageDownloaderDidFinishedLoadingNotification";
+
 @interface ImageDownloader ()
 @property (nonatomic, strong, readwrite) NSURLConnection* connection;
 @property (nonatomic, copy, readwrite) NSURLRequest* request;
@@ -64,7 +66,7 @@
     }
 }
 
-- (void)cancel { // added this
+- (void)cancel {
     if (!self.image) { // no point cancelling if we did the download
         // cancel download in progress, replace connection, start over
         [self.connection cancel];

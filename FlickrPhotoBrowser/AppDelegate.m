@@ -16,7 +16,6 @@
 - (void)dealloc
 {
     [_window release];
-    [_navigationController release];
     [super dealloc];
 }
 
@@ -30,9 +29,9 @@
     MasterViewController *masterViewController = [[[MasterViewController alloc] initWithNibName:@"MasterViewController" bundle:nil] autorelease];
     masterViewController.photos = photos;
     
-    self.navigationController = [[[UINavigationController alloc] initWithRootViewController:masterViewController] autorelease];
+    UINavigationController * navigationController = [[[UINavigationController alloc] initWithRootViewController:masterViewController] autorelease];
 
-    self.window.rootViewController = self.navigationController;
+    self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
     return YES;
 }

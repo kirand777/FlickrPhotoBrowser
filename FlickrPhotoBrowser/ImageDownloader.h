@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-static NSString *const ImageDownloaderDidFinishedLoadingNotification = @"ImageDownloaderDidFinishedLoadingNotification";
+extern NSString *const ImageDownloaderDidFinishedLoadingNotification;
 
 @interface ImageDownloader : NSObject
 

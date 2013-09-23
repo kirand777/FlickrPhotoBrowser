@@ -165,9 +165,7 @@ static NSString *const CellIdentifier = @"PhotoCell";
     if (row == NSNotFound) return; // shouldn't happen
     
     NSIndexPath* ip = [NSIndexPath indexPathForRow:row inSection:0];
-    [self.tableView beginUpdates];
     [self.tableView deleteRowsAtIndexPaths:@[ip] withRowAnimation:UITableViewRowAnimationAutomatic];
-    [self.tableView endUpdates];
 }
 
 - (void)duplicatePhoto:(Photo *)photo {
@@ -182,9 +180,7 @@ static NSString *const CellIdentifier = @"PhotoCell";
     [self.photos insertObject:newPhoto atIndex:index];
 
     NSIndexPath* ip = [NSIndexPath indexPathForRow:index inSection:0];
-    [self.tableView beginUpdates];
     [self.tableView insertRowsAtIndexPaths:@[ip] withRowAnimation:UITableViewRowAnimationAutomatic];
-    [self.tableView endUpdates];
 }
 
 @end

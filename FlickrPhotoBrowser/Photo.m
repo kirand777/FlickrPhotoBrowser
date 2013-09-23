@@ -26,13 +26,10 @@
 }
 
 - (NSString *)appendSuffixToPath:(NSString *)path suffix:(NSString *)suffix {
-    NSString * containingFolder = [path stringByDeletingLastPathComponent];
-    NSString * fullFileName = [path lastPathComponent];
-    NSString * fileExtension = [fullFileName pathExtension];
-    NSString * fileName = [fullFileName stringByDeletingPathExtension];
-    NSString * newFileName = [fileName stringByAppendingString:suffix];
-    NSString * newFullFileName = [newFileName stringByAppendingPathExtension:fileExtension];
-    return [containingFolder stringByAppendingPathComponent:newFullFileName];
+    NSString * fileExtension = [NSString stringWithFormat:@".%@", [path pathExtension]];
+    NSString * sufWithExt = [NSString stringWithFormat:@"%@%@", suffix, fileExtension];
+    
+    return [path stringByReplacingOccurrencesOfString:fileExtension withString:sufWithExt];
 }
 
 - (id)initWithPhotoID:(NSUInteger)photoID photoTitle:(NSString *)photoTitle photoURL:(NSURL *)photoURL {
